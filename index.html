@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <style type="text/css">
+        #mainPopup {
+            padding: 10px;
+            height: 300px;
+            width: 350px;
+            font-family: Helvetica, Ubuntu, Arial, sans-serif;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+        .btn-oauth {
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            background: #3367d6;
+        }
+        .btn-oauth:hover,
+        .btn-oauth:active {
+            background: #3b79ff;
+        }
+        .header {
+            text-align: center;
+        }
+        .description {
+            text-align: center;
+        }
+        .btn-send {
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            background: #3367d6;
+        }
+        .btn-send:hover,
+        .btn-send:active {
+            background: #3b79ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainPopup">
+        <br />
+        <h1 class="header">Discord OAuth</h1>
+        <br />
+        <br />
+        <h3 class="description"></h3>
+        <br />
+        <div class="button-container">
+            <button class="btn-oauth" onclick="handleClickOAuth()">
+                OAuth
+            </button>
+            <button class="btn-send" onclick="handleClickSend()">
+                Send to API
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
